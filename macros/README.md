@@ -1,6 +1,6 @@
-# `bern-kernel-macros`
+# `bern-test-macros`
 
-Procedural macros of the bern-kernel.
+Procedural macros for bern-test.
 
 ## Documentation
 

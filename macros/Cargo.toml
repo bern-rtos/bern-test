@@ -3,6 +3,13 @@ name = "bern-test-macros"
 version = "0.1.0"
 authors = ["Stefan Lüthi <stefan.luethi@outlook.com>"]
 edition = "2018"
+license = "MIT"
+categories = ["embedded", "no-std"]
+keywords = ["embedded", "no_std", "cortex-m", "iot", "rtos"]
+description = "Procedural macros for bern-test."
+documentation = "https://docs.rs/bern-test-macros"
+repository = "https://gitlab.com/bern-rtos/tools/bern-test"
+homepage = "https://bern-rtos.org"
 
 [lib]
 proc-macro = true
@@ -11,3 +18,10 @@ proc-macro = true
 proc-macro2 = "1.0.20"
 quote = "1.0.7"
 syn = { version = "1.0.40", features = ["extra-traits", "full"] }
+
+[package.metadata.docs.rs]
+targets = [
+    "thumbv7em-none-eabi",
+    "thumbv7em-none-eabihf",
+    "thumbv7m-none-eabi",
+]

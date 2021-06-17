@@ -10,7 +10,9 @@
 
 #![no_std]
 
+#[cfg(feature = "serial")]
 pub mod serial;
+#[cfg(feature = "serial")]
 #[doc(hidden)]
 pub mod console;
 #[doc(hidden)]

@@ -78,19 +78,19 @@ macro_rules! term_gray {
 #[cfg(not(feature = "colored"))]
 # [doc(hidden)]
 # [macro_export]
-macro_rules ! term_reset { () => { "" } }
+macro_rules ! term_reset { ($string:expr) => { $string } }
 
 #[cfg(not(feature = "colored"))]
 # [doc(hidden)]
 # [macro_export]
-macro_rules ! term_red { () => { "" } }
+macro_rules ! term_red { ($string:expr) => { $string } }
 
 #[cfg(not(feature = "colored"))]
 # [doc(hidden)]
 # [macro_export]
-macro_rules ! term_green { () => { "" } }
+macro_rules ! term_green { ($string:expr) => { $string } }
 
 #[cfg(not(feature = "colored"))]
 # [doc(hidden)]
 # [macro_export]
-macro_rules ! term_gray { () => { "" } }
+macro_rules ! term_gray { ($string:expr) => { $string } }
